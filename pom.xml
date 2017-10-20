@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.cloudysky</groupId>
+  <artifactId>google-client-utilities</artifactId>
+  <version>1.0.0</version>
+  
+  <dependencies>
+   	
+		 <!-- https://mvnrepository.com/artifact/com.google.http-client/google-http-client -->
+		<dependency>
+		    <groupId>com.google.http-client</groupId>
+		    <artifactId>google-http-client</artifactId>
+		    <version>${project.http.version}</version>
+		</dependency>
+		  
+		  
+		  <!-- https://mvnrepository.com/artifact/com.google.http-client/google-http-client-jackson2 -->
+		<dependency>
+		    <groupId>com.google.http-client</groupId>
+		    <artifactId>google-http-client-jackson2</artifactId>
+		    <version>${project.http.version}</version>
+		</dependency>
+  
+  
+  		<!-- Storage service API -->
+		<dependency>
+    		<groupId>com.google.apis</groupId>
+    		<artifactId>google-api-services-storage</artifactId>
+    		<version>${project.storage.version}</version>
+		</dependency>
+		
+		<!-- Drive service API -->
+		<dependency>
+    		<groupId>com.google.apis</groupId>
+      		<artifactId>google-api-services-drive</artifactId>
+    		<version>${project.drive.version}</version>
+		</dependency>
+		
+		<!-- BigQuery service API -->
+		<dependency>
+      		<groupId>com.google.apis</groupId>
+      		<artifactId>google-api-services-bigquery</artifactId>
+      		<version>${project.bigquery.version}</version>
+    	</dependency>	
+	
+		<!-- YouTubeData service API -->
+		<dependency>
+      		<groupId>com.google.apis</groupId>
+      		<artifactId>google-api-services-youtube</artifactId>
+      		<version>${project.youtubedata.version}</version>
+    	</dependency>	
+    	
+    	<!-- YouTubeAnalytics service API -->
+		<dependency>
+      		<groupId>com.google.apis</groupId>
+      		<artifactId>google-api-services-youtubeAnalytics</artifactId>
+      		<version>${project.youtubeanalytics.version}</version>
+    	</dependency>	
+	
+  </dependencies>
+  
+  <properties>
+   	<project.http.version>1.22.0</project.http.version>
+   	<project.storage.version>v1-rev105-1.22.0</project.storage.version>
+   	<project.drive.version>v3-rev75-1.22.0</project.drive.version>
+   	<project.bigquery.version>v2-rev350-1.22.0</project.bigquery.version>
+   	<project.youtubedata.version>v3-rev183-1.22.0</project.youtubedata.version>
+   	<project.youtubeanalytics.version>v1-rev134-1.22.0</project.youtubeanalytics.version>
+  </properties>
+ 
+</project>
