@@ -52,7 +52,7 @@ public class Utility implements IUtility {
 	
 	
 	/**
-	 * Displays the available regions. 
+	 * Displays the available scopes. 
 	 * @param scopes The list of the allowed service scopes.
 	 */
 	public static void displayScopes(HashMap<String, String> scopes) {
@@ -250,6 +250,10 @@ public class Utility implements IUtility {
         System.out.println();
     }
     
+    /**
+     * Displays the response header.
+     * @param response The HTTP response object. 
+     */
 	public static void  displayResponseHeaders(HttpResponse response) {
 
 		HttpHeaders headers = response.getHeaders();
@@ -269,6 +273,10 @@ public class Utility implements IUtility {
 		
 	}
 	
+	/**
+	 * Displays the response header.
+	 * @param request The HTTP request object.
+	 */
 	public static void displayRequestHeaders(HttpRequest request) {
 		
 		HttpHeaders headers = request.getHeaders();
@@ -289,7 +297,7 @@ public class Utility implements IUtility {
 	 
 	
 	/***
-	 * Copy an input string to a file.
+	 * Copies an input string to a file.
 	 * @param text The input string to read from.
 	 * @param dir The name of the file directory.
 	 * @param fileName The name of the file to write to.
@@ -318,7 +326,13 @@ public class Utility implements IUtility {
 		}	
 	}
 	
-	
+	/**
+	 * Copies an input stream to a file.
+	 * @param inStream The input stream object.
+	 * @param dir The name of the file directory.
+	 * @param fileName The name of the file to write to.
+	 * @throws IOException An I/O error has been detected.
+	 */
 	public static void copyInputStreamToFile (InputStream inStream, 
 			String dir, String fileName) throws IOException {
 		   
@@ -353,7 +367,7 @@ public class Utility implements IUtility {
 	}
 
 	/***
-	 * Copy an existing file to a new file.
+	 * Copies an existing file to a new file.
 	 * @param dir The name of the directory where the files reside.
 	 * @param inFileName The name of the file to copy from.
 	 * @param outFileName The name of the file to copy to.
