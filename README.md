@@ -15,3 +15,5 @@ The following are the supported functions:
 * Copy an input string to a file.
 * Copy an input stream to a file.
 * Copy an existing file to a new file.
+
+![Class Diagram](./gcp-ultilities-client.gif)
