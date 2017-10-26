@@ -16,4 +16,4 @@ The following are the supported functions:
 * Copy an input stream to a file.
 * Copy an existing file to a new file.
 
-![Class Diagram](./gcp-ultilities-client.gif)
+![Class Diagram](./utilities/gcp-ultilities-client.gif)
