@@ -82,7 +82,7 @@ public class Utility implements IUtility {
 	       // System.out.println(String.format("Key: %s Value: %s", mentry.getKey(), mentry.getValue()));
 	       
 	       // Check if the key exists in the list.
-	       int keyExist = key.trim().toLowerCase().compareTo(mentry.getKey().toString());
+	       int keyExist = key.trim().compareTo(mentry.getKey().toString());
 	       
 	       if (keyExist == 0) {
 	    	   // Assign the selected region. 
@@ -92,7 +92,7 @@ public class Utility implements IUtility {
 		} 
 		
 		if (currentScope == null)
-			System.out.println(String.format("Selected scope %s not allowed!", key.trim().toLowerCase()));
+			System.out.println(String.format("Selected scope %s not allowed!", key.trim()));
 		return currentScope;
 	}
 	
