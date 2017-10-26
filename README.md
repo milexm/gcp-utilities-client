@@ -1,5 +1,6 @@
 # gcp-utilities-client
 Defines utility methods and variables to support the application operations. 
+![Class Diagram](./src/main/java/com/acloudysky/utilities/gcp-utilities-client.gif)
 The following are the supported functions:
 * Display the available scopes. 
 * Get the scope related to the specified key for the specific service scopes.
@@ -16,5 +17,4 @@ The following are the supported functions:
 * Copy an input stream to a file.
 * Copy an existing file to a new file.
 
-![Class Diagram](./src/main/java/com/acloudysky/utilities/gcp-utilities-client.gif)
 
