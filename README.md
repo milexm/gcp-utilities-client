@@ -16,5 +16,5 @@ The following are the supported functions:
 * Copy an input stream to a file.
 * Copy an existing file to a new file.
 
-![Class Diagram](./src/main/java/com/acloudysky/utilities/gcp-ultilities-client.gif)
+![Class Diagram](./src/main/java/com/acloudysky/utilities/gcp-utilities-client.gif)
 
